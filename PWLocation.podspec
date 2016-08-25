@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/Phunware'
 
   s.platform     = :ios, '7.0'
-  s.source       = { :git => "https://github.com/phunware/maas-location-ios-sdk.git", :tag => "v1.2.1" }
+  s.source       = { :git => "https://github.com/xwang-phunware/maas-location-ios-sdk.git", :branch => "v1.2.1" }
   s.license      = { :type => 'Copyright', :text => 'Copyright 2015 by Phunware Inc. All rights reserved.' }
 
   s.public_header_files = 'Framework/PWLocation.framework/Versions/A/Headers/*.h'
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.dependency 'PWCore', '~> 2.0.0'
 
   s.xcconfig      = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/PWLocation/**"'}
-  s.ios.frameworks = 'Security', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'CoreTelephony', 'CoreBluetooth', 'CoreMotion', 'CoreLocation'
+  s.ios.frameworks = 'Security', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'CoreTelephony', 'CoreBluetooth', 'CoreMotion', 'CoreLocation', 'MapKit'
   s.library = 'sqlite3', 'z', 'xml2.2'
   s.requires_arc = true
 end
